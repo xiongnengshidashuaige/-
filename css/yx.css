@@ -2,7 +2,6 @@
 
 #box {
 	width: 990px;
-	border: 1px solid black;
 	margin: auto;
 }
 /**/
@@ -137,7 +136,7 @@ a {
 	float: left;
 }
 .row2 .products{
-	border: 1px solid red;
+	/*border: 1px solid red;*/
 	height: 100%;
 	width: 755px;
 	float: right;
@@ -189,4 +188,211 @@ a {
 .hot td:hover{
 	    text-decoration:underline;
 	    color: red;
+}
+/**/
+/*精品游戏*/
+.products li{
+	width: 240px;
+	height: 150px;
+	float: left;
+	position: relative;
+	border-radius: 10px;
+	/*overflow: hidden;*/
+}
+.products ul{
+	margin-top: 23px;
+}
+.products .marg{
+	margin: 0 17px;
+}
+.products .bor-radius{
+	border-radius: 8px;
+}
+.products .matp{
+	margin-top: 24px;
+}
+.products .mask1{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	line-height: 30px;
+	background: rgba(0,0,0,0.5);
+	color: white;
+	border-radius: 10px;
+	font-size: 14px;
+}
+.products .mask1 .game-left{
+	margin-left: 10px;
+}
+.products .mask1 .game-right{
+	float: right;
+	margin-right: 10px;
+}
+.products .mask1 .game-right strong{
+	color: #FFCC00;
+}
+.products .mask2{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.7);
+	z-index: 1;
+	border-radius: 8px;
+	opacity: 0;
+	/*display: none;*/
+}
+.mask2:hover{
+	opacity: 1;
+    transition: all 2s;
+}
+.products .mask2 .sm-mask{
+	background:#f1f1f1 ;
+	width: 210px;
+	height: 120px;
+	margin: auto;
+	margin-top:15px ;
+	position: relative;
+	border-radius: 8px;
+}
+.mask2 .sm-mask h3{
+    font-size: 14px;
+    padding: 5px 0 0 15px;
+    font-weight: bold;
+}
+.mask2 .sm-mask h5{
+	    padding-left: 20px;
+	    padding-top: 5px;
+}
+.mask2 .sm-mask h5 i{
+	margin-right: 5px;
+	border: 1px solid #fc8a0c;
+	margin-bottom: 3px;
+	height: 1px;
+	display: inline-block;
+	border-radius: 55%;
+}
+.mask2 .sm-mask h4{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	background: #fc8a0c;
+	width: 100%;
+    height: 32px;
+    line-height: 32px;
+    color: #fff;
+    text-align: center;
+    border-bottom-left-radius: 8px;
+     border-bottom-right-radius: 8px;
+}
+.seniority span a:hover{
+	text-decoration: underline;
+	color: red;
+}
+.enter:hover{
+	background:greenyellow;
+}
+/**/
+
+/*第三板块*/
+
+.row3{
+	width: 100%;
+	height: 250px;
+	/*border: 1px solid black;*/
+}
+.row3 h3{
+	border: 1px solid #cacacc;
+    font-size: 2em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+	height: 30px;
+	background: url(../img/imgxuebitu/bg_sprite2.png)repeat-x 0 0;
+}
+.row3 h3 span{
+	background: url(../img/imgxuebitu/bg_sprite2.png)no-repeat 0px -254px;
+	display: block;
+    width: 115px;
+    height: 100%;
+    text-indent: -9999px;
+    margin-left: 14px;
+		
+	}
+.row3 li{
+	border: 1px solid gray;
+	width:25%;
+	margin: -1px;
+	height: 200px;
+	float: left;
+	background: gainsboro;
+}
+.row3 li:hover{
+	background: white;
+}
+.row3 .rowmarp{
+	width: 212px;
+	height: 168px;
+	margin: auto;
+	margin-top:16px ;
+	position: relative;
+	border-radius: 8px;
+}
+.row3 .rowmarp h4{
+	display: inline-block;
+	color: #f05a0a;
+    font-size: 14px;
+    margin: 5px;
+}
+.row3 .rowmarp h4:hover{
+	text-decoration: underline;
+}
+.official{
+	    width: 90px;
+	    height: 30px;
+	    /*text-indent: -9999px;*/
+	    background:url(../img/imgxuebitu/bg_sprite2.png) no-repeat 0 2px;
+	    position: absolute;
+   		right: 20px;
+   		text-align: center;
+   		font-size: 14px;
+   		line-height: 30px;
+   		border-radius: 8px;
+}
+.official:hover{
+	background: green;
+	color: white;
+}
+.row3 .rowmarp p{
+	font-size: 12px;
+	margin: 5px;
+}
+.botm{
+	width: 100%;
+	height: 100px;
+}
+.botm p{
+	margin: 10px 0;
+}
+.botm p, .botm ul{
+	text-align: center;
+	font-size: 14px;
+}
+.botm li{
+	display: inline-block;
+}
+.botm p a{
+	padding: 0 10px;
+}
+.botm p a:hover{
+	color: cornflowerblue;
+}
+.col a{
+	color: gray;
+	font-size: 12px;
+}
+.botm li{
+	color: gray;
+	font-size: 12px;
+	padding:0 4px;
 }
