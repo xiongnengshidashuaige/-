@@ -8,7 +8,7 @@
 				height: 68px;
 			}
 			.header-wrap{
-				border: 1px solid black;
+				border: 1px solid white;
 				width: 1000px;
 			    height: 68px;
 			    margin: 0 auto;
@@ -72,8 +72,8 @@
 				}
 				.url{
 					position: absolute;
-					top: 25px;
-					right: 100px;
+					top: 20px;
+					right: 50px;
 				}
 				.url1{
 					background: url(img/header-sprites13.png)no-repeat;
@@ -94,10 +94,111 @@
 					width: 0px;
 				    height: 26px;
 				    background: url(img/header-sprites13.png)no-repeat;
-				    
 				    background-position: 0 -165px;
 				    text-indent: -9999px;
 				    
+				}
+				.url span{
+					font-size: 14px;
+					color:#FF9D00 ;
+					padding: 0 5px;
+				}
+				.url strong{
+					color: gainsboro;
+					font-weight: normal;
+				}
+				.Carousel{
+					margin-top: 3px;
+					width: 100%;
+					height: 400px;
+					position: relative;
+				}
+				.Carousel img{
+					width: 100%;
+					height: 100%;
+				}
+				.Carousel .flrig{
+					height: 310px;
+					float: right;
+					right: 30px;
+					position: absolute;
+					top: 50%;
+					margin-top: -190px;
+				}
+				.Carousel .flrig li{
+					width: 110px;
+					height: 62px;
+					margin: 5px 0;
+					box-sizing: border-box;
+				}
+				.Carousel .flrig li:hover{
+					border: 2px solid #FF9D00;
+				}
+				.Carousel p{
+					background:url(img/index-sprites9.png)no-repeat ;
+					position: absolute;
+					right: 30px;
+					top: 340px;
+					resize: 30px;
+					width: 110px;
+				    height: 35px;
+				    background-position: -60px -50px;
+				    line-height: 200px;
+					
+				}
+				.cearch{
+					width: 538px;
+					height: 89px;
+					background: rgba(0,0,0,0.5);
+					position: absolute;
+					bottom: 60px;
+					left: 50%;
+					margin-left: -269px;
+					border-radius: 5px;
+				}
+				.cearch ul{
+					float: left;
+					padding: 0;
+					margin:10px;
+				}
+				.cearch ul li{
+					float: left;
+					color: white;
+					padding:5px 10px;
+					font-size: 14px;
+				}
+				.cearch ul li i{
+					display: inline-block;
+					height: 10px;
+					width: 10px;
+					border-radius: 40%;
+					border: 1px solid #FF9D00;
+					background: white;
+					margin: 0 5px;
+				}
+				input{
+					height: 20px;
+					width: 450px;
+					position: absolute;
+					left:20px;
+					top: 45px;
+				}
+				.cearch span{
+					display: inline-block;
+					height: 36px;
+					width: 40px;
+					background-color:#FF9D00 ;
+					position: absolute;
+					right: 20px;
+					top: 40px;
+					border-radius: 5px;
+				}
+				.cearch span i{
+					background: url(img/index-sprites9.png)no-repeat;
+					width: 24px;
+				    height: 24px;
+				    background-position: 20px -130px;
+				    vertical-align: top;
 				}
 		</style>
 	</head>
@@ -123,7 +224,34 @@
 					<a class="url1" href="">微博登录</a>
 					<a class="url2" href="">QQ登录</a>
 					<a class="url3" href="">微信登录</a>
+					<span>登录</span>
+					<strong>|</strong>
+					<span>注册</span>
 				</div>
+			</div>
+		</div>
+		<!--E 头部导航-->
+		
+		<!--S 轮播图片-->
+		<div class="Carousel">
+			<img src="img/lunbo.png.jpeg"/>
+			<ul class="flrig">
+				<li><img src="img/wKgBZ1lcg4SAHPipAAJxp8AEUow59.jpeg"/></li>
+				<li><img src="img/wKgBZ1lbUMOAb7f5AAMLcoWvGxc91.jpeg"/></li>
+				<li><img src="img/wKgBZ1lXVAOAVW_9AAQG6P25ntc97.jpeg"/></li>
+				<li><img src="img/wKgBZ1lZ_aCAflm9AARoW5FFUU451.jpeg"/></li>
+				<li><img src="img/wKgBZ1lXT4uAO21FAAd660_P9vU44.jpeg"/></li>
+			</ul>
+			<p></p>
+			<div class="cearch">
+				<ul>
+					<li><i></i>全部</li>
+					<li><i></i>酒店</li>
+					<li><i></i>目的地</li>
+					<li><i></i>自由行商城</li>
+				</ul>
+				<input type="" name="" id="" value="" placeholder="sd" />
+				<span><i>d</i></span>
 			</div>
 		</div>
 	</body>
