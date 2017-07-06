@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.box{
+				height: 280px;
+				border: 1px solid black;
+				width: 300px;
+				overflow: hidden;
+			}
+			ul{
+				margin: 0;
+			}
+			.title li{
+				list-style: none;
+				display: inline-block;
+				padding: 10px;
+				border-top: 2px solid white;
+			}
+			.title li:hover{
+ 				border-top: 2px solid blue;
+			}
+			.brief li{
+				padding: 5px;
+			}
+			li:hover{
+				color: red;
+				text-decoration: underline;
+				cursor: pointer;
+			}
+			.brief{
+				display: none;
+			}
+			.top{
+				display: block;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<!--S 标题-->
+			<ul class="title">
+				<li>头条</li>|
+				<li>社会</li>|
+				<li>娱乐</li>|
+				<li>军情</li>
+			</ul>
+			<!--E 标题-->
+			
+			<!-- S 头条-->
+			<ul class="brief top">
+				<li>副国级领导因何致电这些湘妹子？</li>
+				<li>中俄统一朝鲜问题:川普要崩溃</li>
+				<li>日本太自信 中国出手让其闭嘴</li>
+				<li>台湾恐遭11个邦交国雪崩断交</li>
+				<li>台媒竟然挺印度 网友：没尊严</li>
+				<li>停靠台湾?中国一招让美输不起</li>
+				<li>中俄刚撂狠话！韩被逼入墙角</li>
+				<li>中国最新轰10战略轰炸机秘密外漏!</li>
+			</ul>
+			<!--E 头条-->
+			
+			<!--S 社会-->
+			<ul class="brief">
+				<li>女子在家难产死亡 男友偷偷埋尸</li>
+				<li>女子点特殊外卖 遭骑手偷窥骚扰</li>
+				<li>女子腹痛急救车上产子 称不知怀孕</li>
+				<li>厉害!女大学生2分钟制服660斤公牛</li>
+				<li>指环王!阿姨手戴9枚戒指卡住了7个</li>
+				<li>一家6口被杀 死者家属索赔再败诉</li>
+				<li>不敢信！安检机竟能看到这些东西</li>
+				<li>保姆传染肺结核给3岁孩子:未体检</li>
+			</ul>
+			<!--E 社会-->
+			
+			<!--S 娱乐-->
+			<ul class="brief">
+				<li>妈妈性别被质疑 金星儿子霸气回应</li>
+				<li>女星当街被摸臀 报警后男子这样说</li>
+				<li>赵雅芝牵老公同行 秀恩爱羡煞旁人</li>
+				<li>新丽传媒揭天价片酬：霍建华5千万</li>
+				<li>刘烨晒婚戒纪念8周年 叹时光飞逝</li>
+				<li>林更新荧幕初吻竟是男生 亲完哭了</li>
+				<li>林俊杰被追问感情状态 脸色一沉…</li>
+				<li>赵丽颖拍现代戏 男主又成撕逼现场</li>
+			</ul>
+			<!--E 娱乐-->
+			
+			<!--S 军情-->
+			<ul class="brief">
+				<li>越总理要当点火人?中印要战争</li>
+				<li>中俄统一朝鲜问题:川普要崩溃</li>
+				<li>日本太自信 中国出手让其闭嘴</li>
+				<li>台湾恐遭11个邦交国雪崩断交</li>
+				<li>台媒竟然挺印度 网友：没尊严</li>
+				<li>停靠台湾?中国一招让美输不起</li>
+				<li>中俄刚撂狠话！韩被逼入墙角</li>
+				<li>中国最新轰10战略轰炸机秘密外漏!</li>
+			</ul>
+			<!--E 军情-->
+		</div>
+	</body>
+	<script type="text/javascript">
+		var otitle=document.getElementsByClassName('title')[0];
+		var ali=otitle.getElementsByTagName('li');
+		var abrief=document.getElementsByClassName('brief');
+		var len=ali.length
+		for(var i=0;i<len;i++){
+			ali[i].index=i;
+			ali[i].onclick=function(){
+				for(var i=0;i<len;i++){
+					abrief[i].className='brief';
+				}
+				abrief[this.index].className='brief top';
+			}
+		}
+	</script>
+</html>
