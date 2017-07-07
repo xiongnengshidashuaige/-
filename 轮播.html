@@ -1,224 +1,268 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
 		<style type="text/css">
-			.marp{
+			.marp {
 				height: 68px;
 			}
-			.header-wrap{
+			
+			.header-wrap {
 				border: 1px solid white;
 				width: 1000px;
-			    height: 68px;
-			    margin: 0 auto;
-			    position: relative;
+				height: 68px;
+				margin: 0 auto;
+				position: relative;
 			}
-			.log a{
+			
+			.log a {
 				display: block;
 				background: url(img/header-sprites13.png)no-repeat 0 0;
 				height: 39px;
 				text-indent: -9999px;
 				margin-top: 20px;
-				}
-				li{
-					list-style: none;
-				}
-				.header-wrap ul{
-					position: absolute;
-					top: 0px;
-					left: 160px;
-					padding: 0;
-					margin: 0;
-				}
-				.header-wrap li {
-					float: left;
-					/*padding:0 20px;*/
-					height: 68px;
-					line-height: 68px;
-					/*background: gold;*/
-				}
-				a{
-					text-decoration: none;
-					color: black;
-					font-size: 16px;
-					display: block;
-					height: 68px;
-					padding: 0 15px;
-					border: 2px solid white;
-				}
-				.bot-bor:hover{
-					border-bottom: 2px solid #FF9D00;
-					color:#FF9D00 ;
-				}
-				 a:hover{
-					color:#FF9D00;
-				}
-				.home,.home a{
-					background: #FF9D00;
-					color:white;
-					
-				}
-				.top-bor a:hover{
-					border-top: 2px solid #FF9D00 ;
-					color:#FF9D00;
-				}
-				
-				.top-bor:hover a{
-					color:#FF9D00;
-				}
-				.url a{
-					float: left;
-				}
-				.url{
-					position: absolute;
-					top: 20px;
-					right: 50px;
-				}
-				.url1{
-					background: url(img/header-sprites13.png)no-repeat;
-				    width: 0;
-				    height: 26px;
-				    background-position: 0 -50px;
-				    vertical-align: -7px;
-				    text-indent: -9999px;
-				}
-				.url2{
-					width: 0px;
-				    height: 26px;
-				    background: url(img/header-sprites13.png)no-repeat;
-				    background-position: -30px -50px;
-				    text-indent: -9999px;
-				}
-				.url3{
-					width: 0px;
-				    height: 26px;
-				    background: url(img/header-sprites13.png)no-repeat;
-				    background-position: 0 -165px;
-				    text-indent: -9999px;
-				    
-				}
-				.url span{
-					font-size: 14px;
-					color:#FF9D00 ;
-					padding: 0 5px;
-				}
-				.url strong{
-					color: gainsboro;
-					font-weight: normal;
-				}
-				.Carousel{
-					margin-top: 3px;
-					width: 100%;
-					height: 400px;
-					position: relative;
-				}
-				.Carousel img{
-					width: 100%;
-					height: 100%;
-				}
-				.Carousel .flrig{
-					height: 310px;
-					float: right;
-					right: 30px;
-					position: absolute;
-					top: 50%;
-					margin-top: -190px;
-				}
-				.Carousel .flrig li{
-					width: 110px;
-					height: 62px;
-					margin: 5px 0;
-					box-sizing: border-box;
-				}
-				.Carousel .flrig li:hover{
-					border: 2px solid #FF9D00;
-				}
-				.Carousel p{
-					background:url(img/index-sprites9.png)no-repeat ;
-					position: absolute;
-					right: 30px;
-					top: 340px;
-					resize: 30px;
-					width: 110px;
-				    height: 35px;
-				    background-position: -60px -50px;
-				    line-height: 200px;
-					
-				}
-				.cearch{
-					width: 538px;
-					height: 89px;
-					background: rgba(0,0,0,0.5);
-					position: absolute;
-					bottom: 60px;
-					left: 50%;
-					margin-left: -269px;
-					border-radius: 5px;
-				}
-				.cearch ul{
-					float: left;
-					padding: 0;
-					margin:10px;
-				}
-				.cearch ul li{
-					float: left;
-					color: white;
-					padding:5px 10px;
-					font-size: 14px;
-				}
-				.cearch ul li i{
-					display: inline-block;
-					height: 10px;
-					width: 10px;
-					border-radius: 40%;
-					border: 1px solid #FF9D00;
-					background: white;
-					margin: 0 5px;
-				}
-				input{
-					height: 20px;
-					width: 450px;
-					position: absolute;
-					left:20px;
-					top: 45px;
-				}
-				.cearch span{
-					display: inline-block;
-					height: 36px;
-					width: 40px;
-					background-color:#FF9D00 ;
-					position: absolute;
-					right: 20px;
-					top: 40px;
-					border-radius: 5px;
-				}
-				.cearch span i{
-					background: url(img/index-sprites9.png)no-repeat;
-					width: 24px;
-				    height: 24px;
-				    background-position: 20px -130px;
-				    vertical-align: top;
-				}
+			}
+			
+			li {
+				list-style: none;
+			}
+			
+			.header-wrap ul {
+				position: absolute;
+				top: 0px;
+				left: 160px;
+				padding: 0;
+				margin: 0;
+			}
+			.header-wrap li {
+				float: left;
+				height: 68px;
+				line-height: 68px;
+			}
+			a {
+				text-decoration: none;
+				color: black;
+				font-size: 16px;
+				display: block;
+				height: 68px;
+				padding: 0 15px;
+				border: 2px solid white;
+			}
+			
+			.bot-bor:hover {
+				border-bottom: 2px solid #FF9D00;
+				color: #FF9D00;
+			}
+			
+			a:hover {
+				color: #FF9D00;
+			}
+			
+			.home,
+			.home a {
+				background: #FF9D00;
+				color: white;
+			}
+			
+			.top-bor a:hover {
+				border-top: 2px solid #FF9D00;
+				color: #FF9D00;
+			}
+			
+			.top-bor:hover a {
+				color: #FF9D00;
+			}
+			
+			.url a {
+				float: left;
+			}
+			
+			.url {
+				position: absolute;
+				top: 20px;
+				right: 50px;
+			}
+			
+			.url1 {
+				background: url(img/header-sprites13.png)no-repeat;
+				width: 0;
+				height: 26px;
+				background-position: 0 -50px;
+				vertical-align: -7px;
+				text-indent: -9999px;
+			}
+			
+			.url2 {
+				width: 0px;
+				height: 26px;
+				background: url(img/header-sprites13.png)no-repeat;
+				background-position: -30px -50px;
+				text-indent: -9999px;
+			}
+			
+			.url3 {
+				width: 0px;
+				height: 26px;
+				background: url(img/header-sprites13.png)no-repeat;
+				background-position: 0 -165px;
+				text-indent: -9999px;
+			}
+			
+			.url span {
+				font-size: 14px;
+				color: #FF9D00;
+				padding: 0 5px;
+			}
+			
+			.url strong {
+				color: gainsboro;
+				font-weight: normal;
+			}
+			
+			.Carousel {
+				margin-top: 3px;
+				width: 100%;
+				height: 500px;
+				position: relative;
+			}
+			
+			.Carousel img {
+				width: 100%;
+				height: 100%;
+			}
+			
+			.Carousel .flrig {
+				height: 310px;
+				float: right;
+				right: 30px;
+				position: absolute;
+				top: 50%;
+				margin-top: -190px;
+			}
+			
+			.Carousel .flrig li {
+				width: 110px;
+				height: 62px;
+				margin: 5px 0;
+				box-sizing: border-box;
+			}
+			
+			.Carousel .flrig li:hover {
+				border: 2px solid #FF9D00;
+			}
+			
+			.Carousel p {
+				background: url(img/index-sprites9.png)no-repeat;
+				position: absolute;
+				right: 30px;
+				top: 400px;
+				resize: 30px;
+				width: 110px;
+				height: 35px;
+				background-position: -60px -50px;
+				line-height: 200px;
+			}
+			
+			.cearch {
+				width: 538px;
+				height: 89px;
+				background: rgba(0, 0, 0, 0.5);
+				position: absolute;
+				bottom: 60px;
+				left: 50%;
+				margin-left: -269px;
+				border-radius: 5px;
+			}
+			
+			.cearch ul {
+				float: left;
+				padding: 0;
+				margin: 10px;
+			}
+			
+			.cearch ul li {
+				float: left;
+				color: white;
+				padding: 5px 10px;
+				font-size: 14px;
+			}
+			
+			.cearch ul li i {
+				display: inline-block;
+				height: 10px;
+				width: 10px;
+				border-radius: 40%;
+				border: 1px solid #FF9D00;
+				background: white;
+				margin: 0 5px;
+			}
+			
+			input {
+				height: 30px;
+				width: 450px;
+				position: absolute;
+				left: 20px;
+				top: 40px;
+			}
+			
+			.cearch span {
+				display: inline-block;
+				height: 36px;
+				width: 40px;
+				background-color: #FF9D00;
+				position: absolute;
+				right: 20px;
+				top: 40px;
+				border-radius: 5px;
+			}
+			
+			.cearch span i {
+				display: inline-block;
+				background: url(img/header-sprites13.png) no-repeat 0px -110px;
+				width: 24px;
+				height: 24px;
+				text-align: center;
+				line-height: 36px;
+				font-size: 12px;
+				margin: 5px 0 0 8px;
+				text-indent: -9999px;
+			}
 		</style>
 	</head>
+
 	<body>
 		<!--S 头部导航-->
 		<div class="header">
 			<div class="header-wrap">
 				<div class="log">
 					<a href="">
-					马蜂窝自由行
+						马蜂窝自由行
 					</a>
 				</div>
 				<ul>
-					<li class="home"><a href="">首页</a></li>
-					<li class="bot-bor"><a href="">目的地</a></li>
-					<li class="bot-bor"><a href="">旅游攻略</a></li>
-					<li class="top-bor"><a href="">自由行商城</a></li>
-					<li class="bot-bor"><a href="">酒店</a></li>
-					<li class="top-bor"><a href="">社区</a></li>
-					<li class="bot-bor"><a href="">APP</a></li>
+					<li class="home">
+						<a href="">首页</a>
+					</li>
+					<li class="bot-bor">
+						<a href="">目的地</a>
+					</li>
+					<li class="bot-bor">
+						<a href="">旅游攻略</a>
+					</li>
+					<li class="top-bor">
+						<a href="">自由行商城</a>
+					</li>
+					<li class="bot-bor">
+						<a href="">酒店</a>
+					</li>
+					<li class="top-bor">
+						<a href="">社区</a>
+					</li>
+					<li class="bot-bor">
+						<a href="">APP</a>
+					</li>
 				</ul>
 				<div class="url">
 					<a class="url1" href="">微博登录</a>
@@ -231,16 +275,16 @@
 			</div>
 		</div>
 		<!--E 头部导航-->
-		
+
 		<!--S 轮播图片-->
 		<div class="Carousel">
-			<img src="img/lunbo.png.jpeg"/>
+			<img class="img1" src="img/lunbo.png.jpeg" />
 			<ul class="flrig">
-				<li><img src="img/wKgBZ1lcg4SAHPipAAJxp8AEUow59.jpeg"/></li>
-				<li><img src="img/wKgBZ1lbUMOAb7f5AAMLcoWvGxc91.jpeg"/></li>
-				<li><img src="img/wKgBZ1lXVAOAVW_9AAQG6P25ntc97.jpeg"/></li>
-				<li><img src="img/wKgBZ1lZ_aCAflm9AARoW5FFUU451.jpeg"/></li>
-				<li><img src="img/wKgBZ1lXT4uAO21FAAd660_P9vU44.jpeg"/></li>
+				<li><img src="img/wKgBZ1lcg4SAHPipAAJxp8AEUow59.jpeg" /></li>
+				<li><img src="img/wKgBZ1lbUMOAb7f5AAMLcoWvGxc91.jpeg" /></li>
+				<li><img src="img/wKgBZ1lXVAOAVW_9AAQG6P25ntc97.jpeg" /></li>
+				<li><img src="img/wKgBZ1lZ_aCAflm9AARoW5FFUU451.jpeg" /></li>
+				<li><img src="img/wKgBZ1lXT4uAO21FAAd660_P9vU44.jpeg" /></li>
 			</ul>
 			<p></p>
 			<div class="cearch">
@@ -250,9 +294,45 @@
 					<li><i></i>目的地</li>
 					<li><i></i>自由行商城</li>
 				</ul>
-				<input type="" name="" id="" value="" placeholder="sd" />
-				<span><i>d</i></span>
+				<input type="" name="" id="" value="" placeholder="搜索目的地/攻略/酒店/旅行特价" />
+				<span><i>搜索</i></span>
 			</div>
 		</div>
 	</body>
+	<script type="text/javascript">
+		var oflrig = document.getElementsByClassName('flrig')[0];
+		var ali = oflrig.querySelectorAll('li');
+		var oimg1 = document.getElementsByClassName('img1');
+		var oCarousel = document.getElementsByClassName('Carousel');
+		var arrimg = ['img/lunbo.png.jpeg', 'img/lunbo2.jpeg', 'img/lunbo3.jpeg',
+			'img/lunbo4.jpeg', 'img/lunbo5.jpeg'];
+		var len = arrimg.length;
+		var timer = null;
+		function fn() {
+			timer = setInterval(function() {
+					if(nu < len - 1) {
+						nu++
+					} else {
+						nu = 0
+					}
+					oimg1[0].src = arrimg[nu]
+				}, 3000)
+		};
+		fn();
+		oCarousel[0].onmouseover = function() {
+			clearInterval(timer)
+		} 
+		oCarousel[0].onmouseout = function() {
+		fn();
+		} 
+		var nu=0;
+		for(i = 0; i < len; i++) {
+			ali[i].inte = i
+			ali[i].onclick = function() {
+				oimg1[0].src = arrimg[this.inte]
+				nu=this.inte
+			}
+		}
+	</script>
+
 </html>
